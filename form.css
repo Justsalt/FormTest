@@ -1,0 +1,206 @@
+:root {
+    --redColor: rgb(255, 0, 0);
+    --wheatColor: rgb(245, 233, 233);
+    --whiteColor: white;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--wheatColor);
+    width: 50rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.right-side {
+    /* desine puse */
+    background-color: var(--whiteColor);
+    width: 50%;
+    order: 1;
+    border-radius: 0 1rem 1rem 0;
+    height: 45rem;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.left-side {
+    /* kaire puse */
+    background-color: var(--whiteColor);
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.left-bottom {
+    order: 2;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.student-item {
+    width: 93%;
+    background-color: var(--whiteColor);
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.private-button,
+.delete-button {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.inputWrapper div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrapper label {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    font-family: monospace;
+}
+
+.inputWrapper input {
+    margin: 0 1rem;
+    padding: 0.3rem;
+    color: var(--redColor);
+    border: none;
+    border-bottom: 3px solid;
+}
+
+.it-knowledge-item {
+    font-family: monospace;
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.form-control {
+    border: none;
+    margin-top: 1rem;
+}
+
+.form-control legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.form-control label {
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.fieldset-wrapper {
+    text-align: center;
+    margin: 1rem;
+}
+
+#add-student {
+    padding-right: 20px;
+}
+
+.student-li-element {
+    margin-top: 1rem;
+}
+
+.submitbuttonWrapper {
+    display: flex;
+    justify-content: center;
+    background-color:
+}
+
+.submitWrapper {
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.7rem 2rem;
+    background-color: var(--redColor);
+    color: var(--whiteColor)
+}
+
+#alert {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    font-size: 3rem;
+    color: var(--redColor)
+}
+
+
+/* li {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+} */
+
+.form-control input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--redColor);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.form-control input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--redColor);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.form-control input[type='checkbox'] {
+    accent-color: red;
+}
+
+.form-control span {
+    text-align: center;
+    margin-top: 0.2rem;
+    color: var(--redColor);
+    font-weight: 900;
+    font-stretch: expanded;
+}
+
+div#students-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
